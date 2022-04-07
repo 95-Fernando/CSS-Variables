@@ -1,0 +1,49 @@
+body{
+    background-color: #333;
+}
+:root{
+    --color-one: lightblue;
+    --text-color: black;
+    --color-two: lightcoral;
+    --color-three: rgb(238, 238, 144);
+    --background-transparent: transparent;
+}
+.button{
+    padding: 5px 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 2rem;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px rgb( 0 0 0 / .4);
+    color: var(--text-color);
+}
+
+.button--blue{
+    background-color: var(--color-one);
+}
+
+.button--red{
+    background-color: var(--color-two);
+}
+
+.button--yellow{
+    background-color: var(--color-three);
+}
+
+[class*=button--ghost]{
+    background-color: var(--background-transparent);
+}
+
+.button--ghost-blue{
+    color: var(--color-one);
+}
+
+.button--ghost-red{
+    color: var(--color-two);
+}
+
+.button--ghost-yellow{
+    color: var(--color-three);
+}
+
